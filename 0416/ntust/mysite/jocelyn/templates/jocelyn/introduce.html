@@ -1,0 +1,17 @@
+<h1>個人網站</h1>
+{% for p in people %}
+<h2>{{ p.name }}</h2>
+<table class = "table">
+	<CAPTION><H3><B>自我介紹</B></H3></CAPTION>
+	<tr>
+		<th>姓名</th>
+		<th>性別</th>
+		<th>內容</th>
+	</tr>
+	<tr>
+		<td ALIGN=CENTER>{{ p.name }}</td>
+		<td ALIGN=CENTER>{{ p.sex }}</td>
+		<td ALIGN=CENTER>{{ p.introduce }}</td>
+	</tr>
+</table>
+	{% endfor %}
