@@ -1,0 +1,58 @@
+<html>
+<script>
+	
+	function plus(){
+		document.getElementById("result").value=parseInt(document.getElementById("num1").value)+parseInt(document.getElementById("num2").value);
+	}
+	function minus(){
+		document.getElementById("result").value=parseInt(document.getElementById("num1").value)-parseInt(document.getElementById("num2").value);
+	}
+	function multiply(){
+		document.getElementById("result").value=parseInt(document.getElementById("num1").value)*parseInt(document.getElementById("num2").value);
+	}
+	function divide(){
+		document.getElementById("result").value=parseInt(document.getElementById("num1").value)/parseInt(document.getElementById("num2").value);
+	}
+	function Clear(){
+		document.getElementById("result").value=0;
+		document.getElementById("num1").value=0;
+		document.getElementById("num2").value=0;
+	}
+	function show(){
+		
+		if (document.getElementById("num").value>=60){
+			alert("非常好!")
+		}else{
+			alert("不及格")
+		}
+	}				
+</script>
+<body>
+	<p>作業一</p>
+	<form>
+		第一個數：<input id="num1" type="number">
+		<br><br>
+		第二個數：<input id="num2" type="number">
+		<br><br>
+
+		<input type="button" value="+" onClick="plus()">
+		<input type="button" value="-" onClick="minus()">
+		<input type="button" value="*" onClick="multiply()">
+		<input type="button" value="/" onClick="divide()">
+		<input type="button" value="C" onClick="Clear()">
+	
+		<p>結果：<input id="result" type="text"></p>
+	</form>
+
+	<br><br>
+	<p>作業二</p>
+
+	<form>
+  		Enter your score:<br><br>
+  		<input type="text" id="num">
+  		<br><br>
+ 		<input type="button" value="Submit" onClick="show()">
+	</form> 
+
+</body>
+</html>
